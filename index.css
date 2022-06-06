@@ -3,8 +3,8 @@
 
 :root{
     --left-color:rgba(3, 9, 56, 0.818);
-    --icon-color:rgb(22, 16, 40);
-    --secondary-color:gray;
+    --icon-color:rgb(136, 38, 182);
+    --secondary-color:rgb(228, 223, 223);
    }
 
 *{
@@ -110,6 +110,14 @@ li{
     
 }
 
+.fa-brands{
+    color:var(--icon-color);
+}
+
+.personal-details p{
+    margin: 5% 0;
+}
+
 #location::before{
     font-family: "Font Awesome 5 Free"; 
 	font-weight: 900;
@@ -142,6 +150,7 @@ li{
     font-size: 1.25rem;
     text-transform: uppercase;
     padding: 1rem 0.5rem;
+    margin-top: 15%;
 }
 
 .skill-name{
@@ -171,13 +180,17 @@ li{
     text-transform: uppercase;
 }
 
-.right-section p{
+.right-section p,h4,strong{
     padding: 0.5rem;
 }
 
 .grid-education{
     display: grid;
     grid-template-columns: 80% 20%;
+}
+
+.item-newton li{
+    margin-left: 5%;
 }
 
 
@@ -210,7 +223,7 @@ li{
     }
     .main-content{
         min-height: 1000px;
-        width: 90%;
+        max-width: 90%;
        
     }
 }
