@@ -1,5 +1,12 @@
 /* Common To all */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --left-color:rgba(3, 9, 56, 0.818);
+    --icon-color:rgb(22, 16, 40);
+    --secondary-color:gray;
+   }
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -13,10 +20,7 @@ body{
 
 
 
-:root{
- --left-color:rgba(3, 9, 56, 0.818);
- --icon-color:rgb(22, 16, 40);
-}
+
 .grid{
     display:grid;
     
@@ -37,8 +41,9 @@ body{
 }
 
 .right-section{
-    border: 5px solid red;
+    /* border: 5px solid red; */
     padding: 2rem 3rem;
+    background-color: var(--secondary-color);
 }
 
 img{
@@ -193,4 +198,19 @@ li{
     grid-template-columns: 80% 20%;
     
 
+}
+
+
+/* Media Query */
+
+@media  (max-width:674px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main-content{
+        min-height: 1000px;
+        width: 90%;
+       
+    }
 }
